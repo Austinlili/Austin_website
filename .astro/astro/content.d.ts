@@ -151,44 +151,7 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
-"2022-07-08-first-post/index.md": {
-	id: "2022-07-08-first-post/index.md";
-  slug: "poster‑tilapia‑acidification‑rome‑2018";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"2022-07-15-second-post/index.md": {
-	id: "2022-07-15-second-post/index.md";
-  slug: "poster‑cd44‑icd‑toxicology‑taiwan‑2021";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"2023-08-16-sagittis-purus/index.md": {
-	id: "2023-08-16-sagittis-purus/index.md";
-  slug: "bayesian‑nanoparticle‑partitioning‑grass‑carp";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"2023-08-17-lorem-ipsum/index.md": {
-	id: "2023-08-17-lorem-ipsum/index.md";
-  slug: "gan‑lu‑yin‑gastric‑ulcers‑rats";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"2024-08-17-using-mdx/index.mdx": {
-	id: "2024-08-17-using-mdx/index.mdx";
-  slug: "cd44-icd-sepsis-study";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-};
-
+		
 	};
 
 	type DataEntryMap = {
@@ -197,5 +160,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
