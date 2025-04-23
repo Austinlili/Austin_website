@@ -1,0 +1,107 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Ava from '@src/assets/img/austinli.jpeg';
+import Prose from '../components/Prose.astro';
+
+---
+
+<BaseLayout
+  title="About Me"
+  description="Learn more about my research, projects, and publications."
+>
+  <div class='container'>
+    <main class='prose text-lg dark:prose-invert'>
+      <article>
+        {/* Intro Section */}
+        <div class='w-full md:flex md:items-center gap-16 mb-10'>
+          <div class='flex-1 text-pretty leading-9'>
+            <h1 class='text-4xl font-bold mb-4'>Hi There 👋, I’m Li‑Hsuan Li!</h1>
+            <Prose>
+              <div class='text-lg'>
+                <p>I’m a Research Assistant in the Department of Electrical and Computer Engineering at National Yang Ming Chiao Tung University, optimizing hydrogel microelectrode arrays for enhanced EEG signal detection. My work improved electrode elasticity and biodegradability by over 10%, and I co‑authored a paper accepted to IEEE BioCAS 2025.</p>
+                <p>Upcoming, I will pursue an M.Sc. in Electrical and Computer Engineering at the University of Florida. My academic foundation includes a B.Sc. in Biomedical Science & Environmental Biology from Kaohsiung Medical University, an M.Sc. in Environmental & Occupational Health from National Cheng Kung University, and professional training in Semiconductor & Circuit Design at NYCU.</p>
+              </div>
+            </Prose>
+            <a
+              href="/cv/CV_黎立宣_(final).pdf"
+              download
+              class="mt-6 inline-block px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            >
+              Download CV
+            </a>
+          </div>
+          <div class='flex flex-col items-center flex-none'>
+            <Image src={Ava} alt='Li‑Hsuan Li' width={300} class='rounded-3xl rotate-3 mx-4 md:mx-0' />
+          </div>
+        </div>
+
+        {/* Education */}
+        <div class='mb-8'>
+          <h2 class='text-2xl font-semibold mb-4'>Education</h2>
+          <ul class='list-disc list-inside space-y-2'>
+            <li><strong>University of Florida</strong> — M.Sc., Electrical & Computer Engineering (Aug 2025 – Present)</li>
+            <li><strong>National Yang Ming Chiao Tung University</strong> — Semiconductor & Circuit Design Program (Mar 2024 – May 2024)</li>
+            <li><strong>National Cheng Kung University</strong> — M.Sc., Environmental & Occupational Health, GPA 3.57 (Sep 2019 – Jun 2021)</li>
+            <li><strong>Kaohsiung Medical University</strong> — B.Sc., Biomedical Science & Environmental Biology, GPA 4.05 (Sep 2015 – Jun 2019)</li>
+          </ul>
+        </div>
+
+        {/* Work Experience */}
+        <div class='mb-8'>
+          <h2 class='text-2xl font-semibold mb-4'>Work Experience</h2>
+          <ul class='list-disc list-inside space-y-2'>
+            <li><strong>Research Assistant, NYCU</strong> (Apr 2025 – Jun 2025): Optimized hydrogel electrode properties by >10% and co‑authored IEEE BioCAS 2025 paper.</li>
+            <li><strong>Research Assistant, NCKU</strong> (Jul 2021 – Oct 2022): Conducted osteoarthritis pain model experiments, authored reports & articles, and developed SOPs reducing search time to under 5 minutes.</li>
+            <li><strong>Volunteer Teacher, SPROUT Project</strong> (Feb 2021 – Jun 2021): Taught science in rural indigenous schools with hands‑on activities and presentations.</li>
+          </ul>
+        </div>
+
+        {/* Skills */}
+        <div class='mb-8'>
+          <h2 class='text-2xl font-semibold mb-4'>Skills</h2>
+          <ul class='list-disc list-inside space-y-2'>
+            <li><strong>Computer:</strong> Verilog, FPGA design</li>
+            <li><strong>Animal Surgery:</strong> CLP, ischemia/reperfusion, CSF collection, injections</li>
+            <li><strong>Analysis:</strong> MEA fabrication, AAS, Western blot, ELISA, flow cytometry, cell culture</li>
+            <li><strong>Histology:</strong> H&E, IHC, immunofluorescence, safranin O, PAS, Masson’s trichrome</li>
+          </ul>
+        </div>
+
+        {/* Notable Projects */}
+        <div class='mb-8'>
+          <h2 class='text-2xl font-semibold mb-4'>Notable Projects</h2>
+          <ul class='list-disc list-inside space-y-2'>
+            <li><strong>CD44‑ICD & Sepsis (Master’s Thesis):</strong> Defined CD44‑ICD’s role in LPS‑induced hepatic inflammation via in vivo and molecular analyses.</li>
+            <li><strong>Sleep Deprivation Study:</strong> Linked EAAT1/2 expression changes to oxidative stress in mouse hippocampus.</li>
+            <li><strong>Gastric Ulcer Protection:</strong> Evaluated Gan‑Lu‑Yin’s anti‑ulcer effects via cytokine assays and histology.</li>
+            <li><strong>Osteoarthritis Bone Powder:</strong> Assessed synthetic bone powder efficacy in ACL‑resection rat model for cartilage repair.</li>
+            <li><strong>Hyaluronic Acid Derivative:</strong> Compared thrombosis incidence in rabbit ear injection model.</li>
+            <li><strong>Nanoparticle Toxicology:</strong> Analyzed size‑dependent copper nanoparticle effects in aquatic and plant systems.</li>
+          </ul>
+        </div>
+
+        {/* Publications */}
+        <div class='mb-8'>
+          <h2 class='text-2xl font-semibold mb-4'>Selected Publications</h2>
+          <ul class='list-disc list-inside space-y-2'>
+            <li>Li, L.H. et al. (2024). Inhibiting CD44‑ICD Attenuates LPS‑Induced Hepatic Inflammation in Septic Mice. <em>Int. J. Mol. Sci.</em>, 25(16), 8907.</li>
+            <li>Chandrasekaran, V.R.M. & Li, L.H. (under review). Gan‑Lu‑Yin mitigates alcohol‑induced gastric ulcers in rats.</li>
+            <li>Lin, H.C. et al. (under review). Bayesian modeling of copper nanoparticle partitioning kinetics.</li>
+          </ul>
+        </div>
+
+        {/* Awards */}
+        <div>
+          <h2 class='text-2xl font-semibold mb-4'>Awards & Certifications</h2>
+          <ul class='list-disc list-inside space-y-2'>
+            <li>Excellent Performance, Semiconductor & Circuit Design Program, NYCU (2024)</li>
+            <li>Outstanding Paper Award, NCKU Medical Research Day (2021)</li>
+            <li>Undergraduate Research Creation Award, MOST (2018)</li>
+            <li>Supervisor Safety & Health Training, Tainan City Gov’t (2020)</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </div>
+</BaseLayout>
